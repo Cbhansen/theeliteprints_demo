@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  line-height: 1.5;
+  padding: 20px;
+  font-family: monospace,Helvetica, Arial, sans-serif; }
+
+#landing-page {
+  margin: 100px auto;
+  text-align: center; }
+  #landing-page .banner-logo {
+    width: 90%;
+    height: auto; }
+  #landing-page nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px grey; }
+    #landing-page nav #menu {
+      list-style-type: none;
+      padding: 1em;
+      display: flex;
+      flex-direction: column; }
+      #landing-page nav #menu a {
+        color: #333;
+        font-size: 25px;
+        text-decoration: none;
+        transition: 1s ease-in-out; }
+
+/*# sourceMappingURL=styles.css.map */
