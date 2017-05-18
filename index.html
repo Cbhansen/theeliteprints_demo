@@ -12,10 +12,10 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="animated fadeIn">
+<body>
 
    <div id="landing-page">
-         <img class="banner-logo animated tada" style="animation-delay: .5s" src="images/eliteprintslogo.png" alt="">
+         <img class="banner-logo animated zoomIn" style="animation-delay: .3s" src="images/eliteprintslogo.png" alt="">
          <!-- NAVIGATION -->
    <nav>
       <ul id="menu">
@@ -39,7 +39,8 @@
      crossorigin="anonymous"></script>
      <script>
          $(function() {
-            alrt('Far from perfect. But pretty minimal.')
+            $('body').hide();
+            $('body').fadeIn(1500);
          })
      </script>
 </body>
