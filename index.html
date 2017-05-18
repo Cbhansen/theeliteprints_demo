@@ -14,24 +14,35 @@
 </head>
 <body>
 
+   <div id="slideMenu">
+      <h2><a href="#">FRESH AF</a></h2>
+      <img src="images/monster.png" alt="">
+      <hr>
+      <h2><a href="#">home</a></h2>
+      <h2><a href="#">services</a></h2>
+      <h2><a href="#">about</a></h2>
+      <h2><a href="#">contact</a></h2>
+   </div>
+
+
    <div id="landing-page">
          <img class="banner-logo animated zoomIn" style="animation-delay: .3s" src="images/eliteprintslogo.png" alt="">
          <!-- NAVIGATION -->
    <nav>
       <ul id="menu">
-         <li><a href="index.html">HOME</a></li>
+         <li class="animated slideInLeft"><a href="index.html">HOME</a></li>
          <hr>
-         <li><a href="http://theeliteprints.com/our-work.html">OUR WORK</a></li>
+         <li class="animated slideInLeft"><a href="http://theeliteprints.com/our-work.html">OUR WORK</a></li>
          <hr>
-         <li><a href="http://theeliteprints.com/apparel-catalog.html">APPAREL CATALOG</a></li>
+         <li class="animated slideInLeft"><a href="http://theeliteprints.com/apparel-catalog.html">APPAREL CATALOG</a></li>
          <hr>
-         <li><a href="http://theeliteprints.com/about-us.html">ABOUT US</a></li>
+         <li class="animated slideInLeft"><a href="http://theeliteprints.com/about-us.html">ABOUT US</a></li>
          <hr>
-         <li><a href="http://theeliteprints.com/contact-us.html">CONTACT US</a></li>
+         <li class="animated slideInLeft"><a href="http://theeliteprints.com/contact-us.html">CONTACT US</a></li>
       </ul>
    </nav>
+   <div id="roundBtn"><i class="fa fa-diamond" aria-hidden="true"></i></div>
    </div>
-
 
    <script
      src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -42,6 +53,26 @@
             $('body').hide();
             $('body').fadeIn(1500);
          })
+     </script>
+     <script>
+     var roundBtn = document.querySelector('#roundBtn');
+var slideMenu = document.querySelector('#slideMenu');
+
+roundBtn.addEventListener("click", showMenu, false);
+slideMenu.addEventListener("click", hideMenu, false);
+
+function showMenu(e) {
+  slideMenu.classList.add("show");
+
+  document.body.style.overflow = "hidden";
+}
+function hideMenu(e) {
+  slideMenu.classList.remove("show");
+  e.stopPropagation();
+
+  document.body.style.overflow = "auto";
+
+}
      </script>
 </body>
 </html>
