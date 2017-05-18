@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -30,18 +31,78 @@
          <!-- NAVIGATION -->
    <nav>
       <ul id="menu">
-         <li class="animated slideInLeft"><a href="index.html">HOME</a></li>
+         <li><a href="index.html">HOME</a></li>
          <hr>
-         <li class="animated slideInLeft"><a href="http://theeliteprints.com/our-work.html">OUR WORK</a></li>
+         <li><a href="http://theeliteprints.com/our-work.html">OUR WORK</a></li>
          <hr>
-         <li class="animated slideInLeft"><a href="http://theeliteprints.com/apparel-catalog.html">APPAREL CATALOG</a></li>
+         <li><a href="http://theeliteprints.com/apparel-catalog.html">APPAREL CATALOG</a></li>
          <hr>
-         <li class="animated slideInLeft"><a href="http://theeliteprints.com/about-us.html">ABOUT US</a></li>
+         <li><a href="http://theeliteprints.com/about-us.html">ABOUT US</a></li>
          <hr>
-         <li class="animated slideInLeft"><a href="http://theeliteprints.com/contact-us.html">CONTACT US</a></li>
+         <li><a href="http://theeliteprints.com/contact-us.html">CONTACT US</a></li>
       </ul>
    </nav>
-   <div id="roundBtn"><i class="fa fa-diamond" aria-hidden="true"></i></div>
+   <br>
+   <div style="animation-delay: 1s" class="animated fadeInDownBig" id="roundBtn"><i class="fa fa-diamond" aria-hidden="true"></i></div>
+   <br>
+   <section id="marketing">
+      <h3 class="title">DELIVERING TOP QUALITY WITH A FAST TURNOUND!</h3>
+      <div class="row">
+         <div class="container">
+            <div class="col-sm-3">
+               <img class="icon" src="images/screen-printing-icon.png" alt="">
+               <h3 class="title">APPAREL</h3>
+               <p>Screen print or embroider on T-shirts, Caps, Jackets,Team Uniforms, and much more. You can get custom apparel for your Business, family reuinions, sports teams, local event, gifts etc.. Our top of the line inks will last through endless washes without cracking and we can make any texture or style print you would like.</p>
+            </div>
+            <div class="col-sm-3">
+               <img class="icon" src="images/designing-icon.png" alt="">
+               <h3 class="title">GRAPHIC DESIGN</h3>
+               <p>We  have creative in-house art and design services to help emerge your brand or organization. We can create anything you'd like from scratch or can work from your sketches
+               and artwork files. </p>
+            </div>
+            <div class="col-sm-3">
+               <img class="icon" src="images/signage-icon.png" alt="">
+               <h3 class="title">SIGNS</h3>
+               <p>We offer full color digital,
+                banners, store signs, magnetics, window graphics etc. We specialize in designing, creating, and installing vinyl graphic or decals on vehicles typically for advertising purposes.</p>
+            </div>
+            <div class="col-sm-3">
+               <img class="icon" src="images/promo-button.png" alt="">
+               <h3 class="title">PROMOTIONAL ITEMS</h3>
+               <p>Promotional items are great as gifts for your  customers or  for handing out at trade shows to promote your business and drive more customers.</p>
+            </div>
+            <br>
+         </div>
+      </div>
+   </section>
+   <section id="satisfaction">
+      <h3 class="title">CUSTOMER SATISFACTION: 100%</h3>
+      <div class="progress">
+         <div class="progress-bar progress-bar-success active progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" style="width: 100%;">
+            <span class="sr-only">100% customer satisfaction</span>
+         </div>
+      </div>
+   </section>
+   <hr>
+   <section id="contact">
+      <form>
+         <h3 class="title">CONTACT US</h3>
+         <div class="form-group">
+            <label for="name">NAME</label><br>
+            <input type="text" id="name">
+         </div>
+         <div class="form-group">
+            <label for="email">EMAIL</label><br>
+            <input type="text" id="email">
+         </div>
+         <div class="form-group">
+            <label for="textarea">YOUR MESSAGE</label>
+            <textarea name="textarea" id="message" cols="50" rows="9"></textarea>
+         </div>
+         <button class="btn btn-success">SEND</button>
+      </form>
+   </section>
+
    </div>
 
    <script
@@ -56,23 +117,32 @@
      </script>
      <script>
      var roundBtn = document.querySelector('#roundBtn');
-var slideMenu = document.querySelector('#slideMenu');
+     var slideMenu = document.querySelector('#slideMenu');
 
-roundBtn.addEventListener("click", showMenu, false);
-slideMenu.addEventListener("click", hideMenu, false);
+      roundBtn.addEventListener("click", showMenu, false);
+      slideMenu.addEventListener("click", hideMenu, false);
 
-function showMenu(e) {
-  slideMenu.classList.add("show");
+      function showMenu(e) {
+        slideMenu.classList.add("show");
 
-  document.body.style.overflow = "hidden";
-}
-function hideMenu(e) {
-  slideMenu.classList.remove("show");
-  e.stopPropagation();
+        document.body.style.overflow = "hidden";
+      }
+      function hideMenu(e) {
+        slideMenu.classList.remove("show");
+        e.stopPropagation();
 
-  document.body.style.overflow = "auto";
+        document.body.style.overflow = "auto";
 
-}
+      }
+     </script>
+     <script>
+         var $satisfaction = $('#satisfaction');
+
+         $satisfaction.waypoint(function() {
+            $satisfaction.hide();
+            $satisfaction.show();
+            $satisfaction.addClass('animated fadeInLeft');
+         }, { offset: '50%'});
      </script>
 </body>
 </html>
