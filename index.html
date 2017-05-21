@@ -16,20 +16,44 @@
 <body>
 
    <div id="slideMenu">
-      <h2><a href="#">FRESH AF</a></h2>
-      <img src="images/monster.png" alt="">
-      <hr>
-      <h2><a href="#">home</a></h2>
-      <h2><a href="#">services</a></h2>
+      <h2><a href="index.html">home</a></h2>
+      <h2><a href="#services">services</a></h2>
       <h2><a href="#">about</a></h2>
       <h2><a href="#">contact</a></h2>
    </div>
 
 
+
    <div id="landing-page">
          <img class="banner-logo animated zoomIn" style="animation-delay: .3s" src="images/eliteprintslogo.png" alt="">
          <!-- NAVIGATION -->
-   <nav>
+
+
+   <!-- slider -->
+
+   <div id="slideshow">
+      <div>
+        <img src="images/test-slide1.jpg">
+      </div>
+      <div>
+         <img src="http://placehold.it/350x150" alt="">
+      </div>
+      <div>
+         <img src="images/test-slide2.jpg">
+      </div>
+      <div>
+         <img src="http://placehold.it/350x150" alt="">
+      </div>
+      <div>
+         <img src="images/test-slide3.jpg">
+      </div>
+      <div>
+         <img src="http://placehold.it/350x150" alt="">
+      </div>
+   </div>
+
+
+   <!-- <nav>
       <ul id="menu">
          <li><a href="index.html">HOME</a></li>
          <hr>
@@ -41,36 +65,81 @@
          <hr>
          <li><a href="http://theeliteprints.com/contact-us.html">CONTACT US</a></li>
       </ul>
-   </nav>
+   </nav> -->
+
+
    <br>
    <div style="animation-delay: 1s" class="animated fadeInDownBig" id="roundBtn"><i class="fa fa-diamond" aria-hidden="true"></i></div>
    <br>
-   <section id="marketing">
-      <h3 class="title">DELIVERING TOP QUALITY WITH A FAST TURNOUND!</h3>
+
+   <section id="services">
+   <h3 class="title">DELIVERING TOP QUALITY WITH A FAST TURNOUND!</h3>
       <div class="row">
          <div class="container">
-            <div class="col-sm-3">
-               <img class="icon" src="images/screen-printing-icon.png" alt="">
+
+            <div class="col-sm-3 apparel-col">
+               <img id="apparelBtn" class="icon" src="images/screen-printing-icon.png" alt="">
                <h3 class="title">APPAREL</h3>
                <p>Screen print or embroider on T-shirts, Caps, Jackets,Team Uniforms, and much more. You can get custom apparel for your Business, family reuinions, sports teams, local event, gifts etc.. Our top of the line inks will last through endless washes without cracking and we can make any texture or style print you would like.</p>
             </div>
-            <div class="col-sm-3">
-               <img class="icon" src="images/designing-icon.png" alt="">
+
+            <!-- RENDERED APPAREL COL -->
+
+            <div class="col-sm-3 apparel-col-update hide">
+               <img id="apparelBtn2" class="icon" src="images/screen-printing-icon.png" alt="">
+               <br>
+               <a href="http://theeliteprints.com/apparel-catalog.html" class="btn btn-success">LEARN MORE</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quisquam, ducimus suscipit placeat at in accusamus officiis excepturi reprehenderit, nisi vitae sunt perspiciatis, pariatur ea quo similique. Sit, labore, velit.</p>
+            </div>
+
+
+            <div class="col-sm-3 graphic-col">
+               <img id="graphicBtn" class="icon" src="images/designing-icon.png" alt="">
                <h3 class="title">GRAPHIC DESIGN</h3>
                <p>We  have creative in-house art and design services to help emerge your brand or organization. We can create anything you'd like from scratch or can work from your sketches
                and artwork files. </p>
             </div>
-            <div class="col-sm-3">
-               <img class="icon" src="images/signage-icon.png" alt="">
+
+            <!-- GRAPHIC DESIGN RENDER -->
+
+            <div class="col-sm-3 graphic-col-update hide">
+               <img id="graphicBtn2" class="icon" src="images/designing-icon.png" alt="">
+               <br>
+               <a href="http://theeliteprints.com/design.html" class="btn btn-success">LEARN MORE</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque, amet quod provident corrupti, autem est sit quibusdam quas labore, quidem et cupiditate animi. Totam quis velit hic, sed doloremque!</p>
+            </div>
+
+            <div class="col-sm-3 signs-col">
+               <img id="signsBtn" class="icon" src="images/signage-icon.png" alt="">
                <h3 class="title">SIGNS</h3>
                <p>We offer full color digital,
                 banners, store signs, magnetics, window graphics etc. We specialize in designing, creating, and installing vinyl graphic or decals on vehicles typically for advertising purposes.</p>
             </div>
-            <div class="col-sm-3">
-               <img class="icon" src="images/promo-button.png" alt="">
+
+            <!-- SIGNS RENDER -->
+
+            <div class="col-sm-3 signs-col-update hide">
+               <img id="signsBtn2" class="icon" src="images/signage-icon.png" alt="">
+               <br>
+               <a href="#" class="btn btn-success">LEARN MORE</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quia cumque recusandae, illum magnam ut quaerat fugiat esse, minima amet, illo nihil velit incidunt dolorem nemo temporibus corporis tenetur odio!</p>
+            </div>
+
+            <div class="col-sm-3 promo-col">
+               <img id="promoBtn" class="icon" src="images/promo-button.png" alt="">
                <h3 class="title">PROMOTIONAL ITEMS</h3>
                <p>Promotional items are great as gifts for your  customers or  for handing out at trade shows to promote your business and drive more customers.</p>
             </div>
+
+            <!-- PROMO RENDER -->
+
+            <div class="col-sm-3 promo-col-update hide">
+               <img id="promoBtn2" class="icon" src="images/promo-button.png" alt="">
+               <br>
+               <a href="http://theeliteprints.com/screen-printing.html" class="btn btn-success">LEARN MORE</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptas odio recusandae vel autem, aliquam, quod omnis consequatur voluptatem inventore deserunt quidem aliquid. Voluptate, dolores voluptatem vero perspiciatis quis eveniet.</p>
+            </div>
+
             <br>
          </div>
       </div>
@@ -109,6 +178,8 @@
      src="https://code.jquery.com/jquery-3.2.1.min.js"
      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
      crossorigin="anonymous"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
      <script>
          $(function() {
             $('body').hide();
@@ -118,31 +189,100 @@
      <script>
      var roundBtn = document.querySelector('#roundBtn');
      var slideMenu = document.querySelector('#slideMenu');
-
       roundBtn.addEventListener("click", showMenu, false);
       slideMenu.addEventListener("click", hideMenu, false);
-
       function showMenu(e) {
         slideMenu.classList.add("show");
-
         document.body.style.overflow = "hidden";
       }
       function hideMenu(e) {
         slideMenu.classList.remove("show");
         e.stopPropagation();
-
         document.body.style.overflow = "auto";
-
       }
      </script>
      <script>
          var $satisfaction = $('#satisfaction');
-
          $satisfaction.waypoint(function() {
             $satisfaction.hide();
             $satisfaction.show();
             $satisfaction.addClass('animated fadeInLeft');
          }, { offset: '50%'});
+     </script>
+
+     <script>
+
+     $("#slideshow > div:gt(0)").hide();
+
+         setInterval(function() {
+         $('#slideshow > div:first')
+         .fadeOut(1000)
+         .next()
+         .fadeIn(1000)
+         .end()
+         .appendTo('#slideshow');
+         },  3000);
+
+     </script>
+
+
+     <script>
+
+         $(function() {
+            $('#apparelBtn').on('click' , function() {
+               $('.apparel-col').fadeOut(300, function() {
+                  $('.apparel-col-update').removeClass('hide').fadeIn(300);
+                  $('#apparelBtn2').on('click', function() {
+                     $('.apparel-col-update').fadeOut('100', function() {
+                        $('.apparel-col').fadeIn(300);
+                     })
+                  })
+               })
+            })
+         });
+
+         $(function() {
+            $('#graphicBtn').on('click' , function() {
+               $('.graphic-col').fadeOut(300, function() {
+                  $('.graphic-col-update').removeClass('hide').fadeIn(300);
+                  $('#graphicBtn2').on('click', function() {
+                     $('.graphic-col-update').fadeOut('100', function() {
+                        $('.graphic-col').fadeIn(300);
+                     })
+                  })
+               })
+            })
+         });
+
+         $(function() {
+            $('#signsBtn').on('click' , function() {
+               $('.signs-col').fadeOut(300, function() {
+                  $('.signs-col-update').removeClass('hide').fadeIn(300);
+                  $('#signsBtn2').on('click', function() {
+                     $('.signs-col-update').fadeOut('100', function() {
+                        $('.signs-col').fadeIn(300);
+                     })
+                  })
+               })
+            })
+         });
+
+         $(function() {
+            $('#promoBtn').on('click' , function() {
+               $('.promo-col').fadeOut(300, function() {
+                  $('.promo-col-update').removeClass('hide').fadeIn(300);
+                  $('#promoBtn2').on('click', function() {
+                     $('.promo-col-update').fadeOut('100', function() {
+                        $('.promo-col').fadeIn(300);
+                     })
+                  })
+               })
+            })
+         });
+
+
+
+
      </script>
 </body>
 </html>
